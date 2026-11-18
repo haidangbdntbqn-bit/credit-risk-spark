@@ -1,0 +1,11 @@
+data/
+parquet/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+spark-warehouse/
+metastore_db/
+derby.log
+.DS_Store
+results/model_*/
+results/prep_pipeline/
