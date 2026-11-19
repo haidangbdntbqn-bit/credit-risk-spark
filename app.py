@@ -17,7 +17,7 @@ BLUE, RED, GREY = "#2072B7", "#E81F26", "#9AA5B1"
 
 st.set_page_config(page_title="Rủi ro tín dụng · Apache Spark", layout="wide")
 st.title("Dashboard dự đoán rủi ro vỡ nợ tín dụng")
-st.caption("Dữ liệu Home Credit · xử lý bằng Apache Spark (HDFS, Spark SQL, MLlib) · Nhóm: Nguyễn Hải Đăng, Nguyễn Bình An · GVHD: TS. Ngô Dương Hà")
+st.caption("Dữ liệu Home Credit · xử lý bằng Apache Spark (HDFS, Spark SQL, MLlib) · Thực hiện: Nguyễn Hải Đăng · GVHD: TS. Ngô Dương Hà")
 
 if not (RES / "ket_qua.json").exists():
     st.error("Chưa có results/ket_qua.json. Hãy chạy hết notebook credit_risk_spark.ipynb trước.")
