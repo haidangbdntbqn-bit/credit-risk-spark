@@ -1,0 +1,180 @@
+{
+  "so_ho_so": 307511,
+  "so_cot_bang_dac_trung": 161,
+  "so_chieu_vector": 299,
+  "ti_le_vo_no": 0.0807,
+  "mo_hinh_tot_nhat": "GBT",
+  "luu_tru": "hdfs",
+  "duong_dan_dac_trung": "hdfs://localhost:9000/credit-risk/parquet/features",
+  "duong_dan_mo_hinh": "/Users/haidangw/Desktop/big data/credit-risk-spark/results/model_GBT",
+  "duong_dan_tien_xu_ly": "/Users/haidangw/Desktop/big data/credit-risk-spark/results/prep_pipeline",
+  "thong_ke_du_lieu": [
+    {
+      "bang": "application_train",
+      "so_dong": 307511,
+      "so_cot": 122,
+      "csv_MB": 158.4,
+      "parquet_MB": 25.5,
+      "ti_le_nen_%": 83.9,
+      "so_khoi_hdfs": 2
+    },
+    {
+      "bang": "bureau",
+      "so_dong": 1716428,
+      "so_cot": 17,
+      "csv_MB": 162.1,
+      "parquet_MB": 34.7,
+      "ti_le_nen_%": 78.6,
+      "so_khoi_hdfs": 2
+    },
+    {
+      "bang": "bureau_balance",
+      "so_dong": 27299925,
+      "so_cot": 3,
+      "csv_MB": 358.2,
+      "parquet_MB": 15.9,
+      "ti_le_nen_%": 95.6,
+      "so_khoi_hdfs": 3
+    },
+    {
+      "bang": "previous_application",
+      "so_dong": 1670214,
+      "so_cot": 37,
+      "csv_MB": 386.2,
+      "parquet_MB": 60.9,
+      "ti_le_nen_%": 84.2,
+      "so_khoi_hdfs": 4
+    },
+    {
+      "bang": "POS_CASH_balance",
+      "so_dong": 10001358,
+      "so_cot": 8,
+      "csv_MB": 374.5,
+      "parquet_MB": 103.1,
+      "ti_le_nen_%": 72.5,
+      "so_khoi_hdfs": 3
+    },
+    {
+      "bang": "installments_payments",
+      "so_dong": 13605401,
+      "so_cot": 8,
+      "csv_MB": 689.6,
+      "parquet_MB": 301.2,
+      "ti_le_nen_%": 56.3,
+      "so_khoi_hdfs": 6
+    },
+    {
+      "bang": "credit_card_balance",
+      "so_dong": 3840312,
+      "so_cot": 23,
+      "csv_MB": 404.9,
+      "parquet_MB": 124.6,
+      "ti_le_nen_%": 69.2,
+      "so_khoi_hdfs": 4
+    }
+  ],
+  "chat_luong": {
+    "dong_trung_lap": [
+      {
+        "bang": "application_train",
+        "so_dong": 307511,
+        "dong_trung_lap": 0
+      },
+      {
+        "bang": "bureau",
+        "so_dong": 1716428,
+        "dong_trung_lap": 0
+      },
+      {
+        "bang": "bureau_balance",
+        "so_dong": 27299925,
+        "dong_trung_lap": 0
+      },
+      {
+        "bang": "previous_application",
+        "so_dong": 1670214,
+        "dong_trung_lap": 0
+      },
+      {
+        "bang": "POS_CASH_balance",
+        "so_dong": 10001358,
+        "dong_trung_lap": 0
+      },
+      {
+        "bang": "installments_payments",
+        "so_dong": 13605401,
+        "dong_trung_lap": 0
+      },
+      {
+        "bang": "credit_card_balance",
+        "so_dong": 3840312,
+        "dong_trung_lap": 0
+      }
+    ],
+    "khoa_trung": 0,
+    "so_cot_thieu": 64,
+    "so_cot_thieu_tren_50": 41,
+    "days_employed_365243": 55374,
+    "nguong_thu_nhap": 117000000.0
+  },
+  "ket_qua_mo_hinh": [
+    {
+      "Mo_hinh": "Logistic Regression",
+      "AUC_ROC": 0.7621,
+      "AUC_PR": 0.2385,
+      "TP": 3356,
+      "FP": 17005,
+      "FN": 1473,
+      "TN": 39462,
+      "Accuracy": 0.6985,
+      "Precision": 0.1648,
+      "Recall": 0.695,
+      "F1": 0.2665,
+      "Thoi_gian_huan_luyen_s": 3.66
+    },
+    {
+      "Mo_hinh": "Random Forest",
+      "AUC_ROC": 0.7488,
+      "AUC_PR": 0.2186,
+      "TP": 3261,
+      "FP": 16637,
+      "FN": 1568,
+      "TN": 39830,
+      "Accuracy": 0.703,
+      "Precision": 0.1639,
+      "Recall": 0.6753,
+      "F1": 0.2638,
+      "Thoi_gian_huan_luyen_s": 21.55
+    },
+    {
+      "Mo_hinh": "GBT",
+      "AUC_ROC": 0.7645,
+      "AUC_PR": 0.2463,
+      "TP": 3278,
+      "FP": 15946,
+      "FN": 1551,
+      "TN": 40521,
+      "Accuracy": 0.7145,
+      "Precision": 0.1705,
+      "Recall": 0.6788,
+      "F1": 0.2726,
+      "Thoi_gian_huan_luyen_s": 21.41
+    }
+  ],
+  "thoi_gian_s": {
+    "1_doc_csv_infer_schema": 9.43,
+    "2_ghi_parquet": 16.04,
+    "3a_dem_dong_csv": 0.55,
+    "3b_dem_dong_parquet": 0.14,
+    "2a_kiem_tra_trung_lap": 19.92,
+    "4_tong_hop_join_ghi_parquet": 13.38,
+    "5_fit_tien_xu_ly": 8.46,
+    "6_train_Logistic Regression": 3.66,
+    "6_train_Random Forest": 21.55,
+    "6_train_GBT": 21.41,
+    "8a_pandas_csv": 1.64,
+    "8b_spark_csv": 4.95,
+    "8c_spark_parquet": 0.43
+  },
+  "spark_version": "3.5.9"
+}
